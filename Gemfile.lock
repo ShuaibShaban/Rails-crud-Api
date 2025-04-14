@@ -115,6 +115,8 @@ GEM
     erubi (1.13.1)
     et-orbi (1.2.11)
       tzinfo
+    ffi (1.17.1-x64-mingw-ucrt)
+    ffi (1.17.1-x86_64-linux-gnu)
     fugit (1.11.1)
       et-orbi (~> 1, >= 1.2.11)
       raabro (~> 1.4)
@@ -126,6 +128,9 @@ GEM
       multi_xml (>= 0.5.2)
     i18n (1.14.7)
       concurrent-ruby (~> 1.0)
+    image_processing (1.14.0)
+      mini_magick (>= 4.9.5, < 6)
+      ruby-vips (>= 2.0.17, < 3)
     importmap-rails (2.1.0)
       actionpack (>= 6.0.0)
       activesupport (>= 6.0.0)
@@ -167,6 +172,9 @@ GEM
       net-smtp
     marcel (1.0.4)
     matrix (0.4.2)
+    mini_magick (5.2.0)
+      benchmark
+      logger
     mini_mime (1.1.5)
     minitest (5.25.5)
     msgpack (1.8.0)
@@ -288,6 +296,9 @@ GEM
       rubocop-performance (>= 1.24)
       rubocop-rails (>= 2.30)
     ruby-progressbar (1.13.0)
+    ruby-vips (2.2.3)
+      ffi (~> 1.12)
+      logger
     rubyzip (2.4.1)
     securerandom (0.4.1)
     selenium-webdriver (4.31.0)
@@ -354,11 +365,13 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  actiontext
   bootsnap
   brakeman
   capybara
   debug
   httparty
+  image_processing (~> 1.2)
   importmap-rails
   jbuilder
   jquery-rails
